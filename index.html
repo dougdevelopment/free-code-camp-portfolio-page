@@ -1,0 +1,131 @@
+<!-- User Story #1: My portfolio should have a welcome section with an id of welcome-section.
+
+User Story #2: The welcome section should have an h1 element that contains text.
+
+User Story #3: My portfolio should have a projects section with an id of projects.
+
+User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project.
+
+User Story #5: The projects section should contain at least one link to a project.
+
+User Story #6: My portfolio should have a navbar with an id of navbar.
+
+User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page.
+
+User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab.
+
+User Story #9: My portfolio should have at least one media query.
+
+User Story #10: The height of the welcome section should be equal to the height of the viewport.
+
+User Story #11: The navbar should always be at the top of the viewport. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+        <nav id='navbar'>
+            <div class='left-nav'>
+                <p>DOUGDEVELOPMENT</p>
+            </div>
+            <div class='right-nav'>
+                <a href='#github'>Folio</a>
+            </div>
+        </nav>
+
+    <main>
+
+        <section id='welcome-section'>
+            <div class='image-container'>
+             <h1 class='hero-title'>DOUG<br />DEVELOPMENT</h1>
+             <a href='#projects'>
+             <svg width="55" height="83" viewBox="0 0 55 83" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_21_118)">
+                <path d="M20.8787 68.1213C22.0503 69.2929 23.9497 69.2929 25.1213 68.1213L44.2132 49.0294C45.3848 47.8579 45.3848 45.9584 44.2132 44.7868C43.0416 43.6152 41.1421 43.6152 39.9706 44.7868L23 61.7574L6.02944 44.7868C4.85786 43.6152 2.95837 43.6152 1.7868 44.7868C0.615223 45.9584 0.615223 47.8579 1.7868 49.0294L20.8787 68.1213ZM20 0L20 66H26L26 0L20 0Z"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_21_118" x="0.908203" y="0" width="53.1836" height="83" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="5" dy="10"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_21_118"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_21_118" result="shape"/>
+                </filter>
+                </defs>
+                </svg>
+            </a>
+            </div>
+        </section>
+
+        <section id='logo-strip'>
+            <img class='lang-logo' src='./assets/icons8-html-5-480.png' alt='html'>
+            <img class='lang-logo' src="./assets/icons8-css3-480.png" alt="CSS">
+            <img class='lang-logo' src="./assets/icons8-javascript-480.png" alt="javascript">
+        </section>
+
+        <section id='project-cards'>
+
+            <h2>Featured Projects</h2>
+
+            <div id='projects'>
+                
+                <div class="project-tile">
+                    <a href='https://github.com/dougdevelopment/free-code-camp-tribute-page' target='_blank' class='tile-link'>
+                        <img  src="./assets/Code BW.png" alt="Avatar" class="tile-image">
+                        <div class="overlay">
+                            <div class="text">Tribute Page</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-tile">
+                    <a href='https://github.com/dougdevelopment/free-code-camp-survey-form' target='_blank' class='tile-link'>
+                        <img  src="./assets/Code BW.png" alt="Avatar" class="tile-image">
+                        <div class="overlay">
+                            <div class="text">Survey Form</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-tile">
+                    <a href='https://github.com/dougdevelopment/free-code-camp-technical-documentation-page' target='_blank' class='tile-link'>
+                        <img  src="./assets/Code BW.png" alt="Avatar" class="tile-image">
+                        <div class="overlay">
+                            <div class="text">Technical Documentation Page</div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+
+        </section>
+
+        <section id='github'>
+            <a id='profile-link' target='_blank' href='https://github.com/dougdevelopment'>
+                <img src='./assets/Mask Group.png'>
+            </a>
+            <p>Check out my portfolio</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>DOUGDEVELOPMENT</p>
+    </footer>
+
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+    
+</body>
+</html>

@@ -1,0 +1,272 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+:root{
+    --main-color: #87E3FA;
+    --secondary-color: #b09aef;
+    --off-black: #424242;
+    --tertiary: #46a8ae;
+}
+*{
+    margin: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/*Typography*/
+
+h2{
+    color:var(--tertiary);
+    font-family: 'Nanum Gothic';
+    font-size: 36px;
+}
+
+/*Navigation*/
+nav{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: var(--main-color);
+    color: white;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.25);
+    margin: 0;
+    padding: 2%;
+    height: 20px;
+    z-index: 1;
+    display:flex;
+    flex-direction: row;
+}
+
+.left-nav{
+    width: 50vw;
+    font-family: 'Nanum Gothic';
+    font-weight: 700;
+    ;
+
+}
+.right-nav{
+    width:50vw;
+    text-align: right;
+    margin-right: 5%;
+    color: var(--off-black);
+}
+.right-nav a{
+    color: var(--off-black);
+}
+
+.right-nav a:hover{
+    color:var(--secondary-color);
+}
+
+header p{
+    width: 40%;
+    display: inline-block;
+}
+
+
+main{
+    margin-top: 20px;
+    height: auto;
+}
+
+#welcome-section{
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-title{
+    font-size: 144px;
+    color: white;
+    text-shadow: 8px 10px 6px rgba(0,0,0,0.5);
+    text-align: center;
+    padding-top: 20vh;
+}
+
+.image-container{
+    background-image: url("./assets/header_background.jpg"); 
+    background-color: #cccccc; 
+    height: 100%; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+/*Logo strip*/
+
+#logo-strip{
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.lang-logo{
+    width: 10%;
+    height: 10%;
+    filter: grayscale(100%);
+    padding: 2%;
+}
+
+/*Project tiles*/
+
+#project-cards{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#projects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    color: white;
+}
+
+.tile-link{
+    display: block;
+}
+
+.tile-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--tertiary)
+  }
+
+  .project-tile:hover .overlay {
+    opacity: 0.8;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .project-tile {
+    width: 30vw;
+    position: relative;
+  }
+
+/*GitHub CTA Section */
+
+#github{
+    width: 100vw;
+    text-align: center;
+    background-color: var(--off-black);
+    color: white;
+    margin-top: 20px;
+    height: 120px;
+}
+
+#profile-link img{
+    width: 5vw;
+    margin-top: 15px;
+}
+
+#github p{
+    margin-top: 10px;
+}
+
+/*Footer*/
+
+footer{
+    width: 100vw;
+    background-color: #C4C4C4;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    height: 50px;
+    background-color: #c4c4c4;
+    color: var(--off-black);
+}
+footer p{
+    padding-top: 20px;
+ 
+
+}
+
+/*Page scroll button */
+
+svg{
+    margin: 0 auto;
+    animation: mymove 3s infinite;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+}
+
+
+@keyframes mymove {
+    from {fill: white;}
+    to {fill: var(--tertiary)}
+  }
+
+/*Media Query*/
+
+@media only screen and (max-width: 600px) {
+
+    #projects{
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    .project-tile{
+        width: 70vw;
+        height: 70vw;
+        margin-top: 10px;
+    }
+
+    .hero-title{
+        font-size: 60px;
+        margin-top: 50px;
+    }
+
+    #welcome-section{
+        height: 60vh;
+    }
+
+    #logo-strip{
+        height: 20vh;
+    }
+    
+    .lang-logo{
+        width: auto;
+        height: 60%;
+        filter: grayscale(100%);
+    }
+
+    #profile-link img{
+        width: 10vw;
+    }
+}
+
+  
+
+  
+
+  
